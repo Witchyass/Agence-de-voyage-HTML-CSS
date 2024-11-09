@@ -1,0 +1,502 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+:root{
+    --primary-color: #ff226f;
+    --primary-color-dark: #fe6769;
+    --text-dark: #333333;
+    --white: #ffffff;
+    --pink:rgb(246, 109, 109); }
+header{
+    top:0;left:0;right:0;
+    background:white;
+    padding: 2rem 9%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top:6rem ;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255,51,153,.05);
+
+}
+
+header .logo{
+    font-size:3rem;
+    color: #333;
+    font-weight:bolder;
+
+}
+header .logo span{
+    color:var(--pink);
+}
+header .navbar a{
+    font-size:2rem;
+    padding:0 1.5rem ;
+    color: #666;
+
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+.mute-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;}
+
+.mute-button img {
+    width: 50px;
+    height: 50px;
+}
+/* -------------------------------------home-------------------------------------------- */
+.home{
+    display: flex;
+    align-items:center;
+    min-height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.tunisia{
+    background-image:url(tuni.jpg) ;
+}
+.japan{
+    background-image:url(jap.jpg) ;
+}
+.italy{
+    background-image:url(ita.jpg) ;
+}
+.visittunisia{
+    background-image:url(visittunisia.png) ;
+    min-height:55vh;
+}
+.visitjapan{
+    background-image:url(visitjapan.png) ;
+    min-height:50vh;
+}
+.visititaly{
+    background-image:url(visititalia.png) ;
+    min-height:50vh;
+}
+
+.home .italycontent{
+    max-width: 50rem;
+}
+.home .italycontent h3{
+    font-size:13rem;
+    color:rgb(242, 230, 230);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.home .italycontent span{
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(234, 216, 216);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .tunisiacontent{
+    max-width: 50rem;
+}
+.home .tunisiacontent h3{
+    font-size:13rem;
+    color: rgb(242, 230, 230);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.home .tunisiacontent span{
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(234, 216, 216);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .japancontent{
+    max-width: 50rem;
+}
+.home .japancontent h3{
+    font-size:13rem;
+    color: rgb(242, 230, 230);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.home .japancontent span{
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(36, 141, 130);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+h1{
+    font-size:2rem ;
+    color: #832525;
+}
+p{
+    font-size:1.5rem ;
+    color: #6b5656;
+    padding : 5rem 0;
+    padding-top:1rem;
+    line-height:1.5;
+
+}
+.fixed-image {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999; 
+  }
+  
+  .icon {
+    width: 60px; 
+    height: 60px;
+    
+  }
+.heading span{
+    color:rgb(246, 109, 109);
+}
+/* ---------------------------about---------------------------------- */
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: 2rem 0;
+    padding-bottom: 3rem;
+
+}
+.about .row .video-container{
+    position: relative;
+}
+.about .row .video-container video{
+    width: 100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+.about .row .content{
+    flex: 1 1 40;
+}
+.about .row .content h3{
+    font-size:3rem ;
+    color: #333;
+
+}
+.about .row .content p {
+    font-size:1.5rem ;
+    color: #999;
+    padding : 5rem 0;
+    padding-top:1rem;
+    line-height:1.5;
+
+} 
+table img{
+    border-radius: 10px;
+}
+/* ----------------------addition------------- */
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+.col{
+    flex-basis: 50%;
+}
+
+.col p{
+    color: black;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.col h2{
+    color: rgb(229, 236, 241);
+    font-size: large;
+    padding-top:20rem;
+    line-height:1.5;
+    text-shadow: 0 0 5px #999;
+    font-weight: 500;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.col h3{
+    color: rgb(229, 236, 241);
+    font-size: large;
+    padding-top:15rem;
+    line-height:1.5;
+    text-shadow: 0 0 5px #999;
+    font-weight: 500;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.card{
+    width: 270px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 5px 5px;
+    cursor: pointer; 
+    background-position: center;
+    background-size: cover;
+    transition:transform 0.5s;
+
+}
+.card:hover{
+    transform:translateY(-10px) ;
+}
+.card1{
+    background-image: url(tunitoo.png);
+    width: 500px;
+   height: 400px;}
+.card2{
+    background-image: url(flag.png);
+}
+.card3{
+    background-image: url(foodie.png);
+    width: 400px;
+    }
+.card4{
+    background-image: url(histo.png);
+    width: 550px;
+    height: 400px;}
+.card5{
+background-image: url(tada.png);
+width: 320px}
+.card6{
+    background-image: url(pizza.png);
+    width: 300px;}
+
+.card7{
+            background-image: url(kimono.png);
+            width: 500px;
+            height: 400px;}
+.card8{
+    background-image: url(wee.png);
+    width: 350px;}
+.card9{
+        background-image: url(tok\ \(2\).png);
+        width: 300px;}
+.Plans img:hover{
+            transform:translateY(-5px) ;
+        }        
+
+/* ----------Footer-------------- */
+.footer{
+    background-color: rgb(131, 181, 232);
+}
+
+ .footer .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;}
+
+.footer .box-container .box h3{
+        color:#1b1919;
+        font-size: 2rem;
+        padding:1rem 0;
+    
+    }
+ .footer .box-container .box a{
+        display: block;
+        color:#666;
+        font-size: 1.5rem;
+        padding:1rem 0;
+    
+    }
+.footer .credit{
+    text-align: center;
+    padding:1rem;
+    margin-top: 1rem;
+    padding-top:2rem;
+    font-size:1.5rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+.footer span{
+    color:rgb(246, 109, 109);;} 
+.footer .box-container .box a:hover{
+        color:rgb(246, 109, 109);
+    
+    }
+    .review{
+        /* background-image: url("Product\ Catalog\ Website\ in\ Lilac\ Dark\ Green\ Simple\ Vibrant\ Minimalism\ Style.png"); */
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        display: flex;
+      }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+      }
+    .container__left h1 {
+        font-size:5rem;
+        color: rgb(26, 18, 18);
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+      }
+    .container__left span{
+        font-size:5rem;
+        color:rgb(246, 109, 109);
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    .container__left p {
+        font-size:1.8rem ;
+        color: #070707;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
+        padding-top:1rem;
+        line-height:1.5;
+      } 
+.container__left button {
+        padding: 1rem 2rem;
+        margin-top: 5px;
+        margin: 10rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--primary-color-dark)
+        );
+        font-style: italic;
+        font-size:1.8rem ;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+    .container__left button:hover{
+        transform:translateY(-10px) ;
+    }
+    .container__right {
+        display: grid;
+        gap: 2rem;
+      }
+      
+    .cardo {
+        padding: 2rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        background-color:white;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+    .cardo:hover{
+        transform:translateY(-10px) ;
+    }
+    .cardo img {
+        max-width: 75px;
+        border-radius: 100%;
+      }
+      
+    .card__content {
+        display: flex;
+        gap: 1rem;
+      }
+      
+    .card__content span i {
+        font-style: italic;
+        margin-bottom: 1rem;
+        font-size:1.8rem ;
+        color: #eb8a8a;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
+        padding : 5rem 0;
+        padding-top:1rem;
+      }
+      
+      .card__details p {
+        font-style: italic;
+        margin-bottom: 1rem;
+        font-size:1.8rem ;
+        color: #999;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
+        padding : 5rem 0;
+        padding-top:1rem;
+      }
+      
+      .card__details h4 {
+        text-align: right;
+        font-style: italic;
+        font-size:1.8rem ;
+        color:rgb(246, 109, 109);
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;}
+@media (max-width:991px){
+            html{
+                font-size: 55%;
+            }
+            header{
+                padding:2rem ;
+        
+            }
+        }
+@media (max-width:450px){
+            html{
+                font-size: 50%;
+            }}
+          
+@media (width < 1200px) {
+                .container {
+                  gap: 3rem;
+                }
+              }
+              
+@media (width < 900px) {
+                .container {
+                  grid-template-columns: repeat(1, 1fr);
+                }
+              
+                .container__right {
+                  grid-template-columns: repeat(2, 1fr);
+                }
+              }
+              
+        @media (width < 750px) {
+                .container__right {
+                  grid-template-columns: repeat(1, 1fr);
+                }
+              }
